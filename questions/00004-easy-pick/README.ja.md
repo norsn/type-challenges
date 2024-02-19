@@ -11,6 +11,10 @@ interface Todo {
   completed: boolean
 }
 
+type MyPick<T, K extends keyof T> = {
+  [key in keyof T & K]: T[key]
+}
+
 type TodoPreview = MyPick<Todo, 'title' | 'completed'>
 
 const todo: TodoPreview = {

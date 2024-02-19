@@ -8,7 +8,8 @@ Type Challenges では、型システム自体を使用してアサーション�
 
 ```ts
 // expected to be string
-type HelloWorld = any
+// type HelloWorld = any
+type HelloWorld = string
 ```
 
 ```ts
